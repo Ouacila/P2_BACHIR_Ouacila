@@ -1,0 +1,47 @@
+body
+{   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 90%;
+    display: flex;
+}
+aside{
+    width: 30%;
+    background-color:#29B6F6;
+    overflow: hidden;
+    
+} 
+aside h2{
+    background-color: #37474F;
+    color: #29B6F6;
+}
+aside p{
+    width: 80%;
+    text-align: ;
+}
+.prenom{
+
+    color: #29B6F6;
+}
+
+header{
+    text-align: center;
+}
+#photo{
+    width:145px;
+    height:145px;
+    background-image: url('Images/Photocv.jpg');
+    border: 4px #BDBDBD solid;
+    border-radius: 100px;
+}
+span{
+	color:black;
+	font-size: 1rem;
+}
+ul {
+	list-style-type: disc ; 
+	font-size: 2rem;
+	color:#29B6F6;
+}
+footer{
+    display: flex;
+    
+}
