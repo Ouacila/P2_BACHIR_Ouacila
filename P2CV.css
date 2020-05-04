@@ -3,12 +3,19 @@ body
     width: 90%;
     display: flex;
 }
+
 aside{
     width: 30%;
     background-color:#29B6F6;
     overflow: hidden;
     
 } 
+.fa-paint-brush, .fa-book-reader, .fa-running {
+        color:#37474F;
+        font-size:3rem;
+        border: 2px #37474F solid;
+        border-radius: 200px;
+}
 aside h2{
     background-color: #37474F;
     color: #29B6F6;
@@ -17,7 +24,7 @@ aside p{
     width: 80%;
     text-align: ;
 }
-.prenom{
+dl{
 
     color: #29B6F6;
 }
