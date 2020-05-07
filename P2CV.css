@@ -5,14 +5,15 @@ body
     display: flex;
 }
 #photo{
-    width:145px;
-    height:145px;
+    width:180px;
+    height:180px;
     background-image: url('Images/Photocv.jpg');
+    background-color: #ffff;
     border: 4px #BDBDBD solid;
     border-radius: 100px;
     position:absolute;
-    margin-top: 20px;
-    margin-left: 80px;
+    margin-top: 80px;
+    margin-left: 30px;
 }
 aside{
     width: 20%;
@@ -21,8 +22,8 @@ aside{
 
 }
 aside h2{
+    margin-top: 350px;
     text-align: center;
-    margin-top: 200px;
     background-color: #37474F;
     color: #29B6F6;
 }
@@ -42,47 +43,50 @@ aside p{
 section{
     width: 80%;
 }
-section article{
-    border-top: 5px #29B6F6 solid;
+section h2{
     margin-left: 50px;
-
 }
-dl{
+section article{
+    margin-left: 50px;
+    border-top: 3px #29B6F6 solid;
+    margin-bottom: 100px;
+}
+.prenom{
      color: #29B6F6;
 }
 
 header{
-    margin-left: 50px;
     margin-bottom: 100px;
 }
 h1 {
-    display: inline;
+    margin-left: 50px;
     font-size: 50px;
+  
 }
 header h2{
     font-size: 30px;
 }
-
-}
 .fa-graduation-cap , .fa-briefcase , .fa-pencil-alt {
+    margin-right: 20px;
     color:#29B6F6;
     font-size: 2rem;
-    margin-right: 50px;
 }
 
 span{
 	color:black;
-	font-size: 1rem;
+    font-size: 25px;
+    font-weight: bold;
 }
-ul {
-	list-style-type: disc ; 
-	font-size: 2rem;
-	color:#29B6F6;
+
+table{
+    width: 100%;
 }
-article{
-    display:;
+td{
+    width: 50%;
+    height: 50px;
 }
-.date{
-    display: block;
-    width:20%;
+li{
+    list-style-type: disc;
+    font-size: 2rem;
+    color: #29B6F6;
 }
