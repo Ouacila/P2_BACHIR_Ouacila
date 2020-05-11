@@ -47,18 +47,18 @@ section h2{
     margin-left: 50px;
 }
 section article{
-    margin-left: 50px;
-    border-top: 3px #29B6F6 solid;
-    margin-bottom: 100px;
+   
 }
 .prenom{
      color: #29B6F6;
+     margin-right: 10px;
 }
 
 header{
     margin-bottom: 100px;
 }
 h1 {
+    display: inline-flex;
     margin-left: 50px;
     font-size: 50px;
   
@@ -80,6 +80,9 @@ span{
 
 table{
     width: 100%;
+    margin-left: 50px;
+    border-top: 3px #29B6F6 solid;
+    margin-bottom: 100px;
 }
 td{
     width: 50%;
@@ -89,4 +92,32 @@ li{
     list-style-type: disc;
     font-size: 2rem;
     color: #29B6F6;
+}
+
+@media all and (max-width: 1199px)
+{  body{
+        width: 100%;
+        margin-left: 0rem;
+        display: flex;
+        flex-direction: column;
+    }
+    aside{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    
+}
+    aside h2{
+        margin-top: 0px;
+    }
+    #photo{
+        position: relative;
+        margin-bottom: 50px;
+    }
+    section{
+        width: 70%;
+    }
+    .fa-paint-brush, .fa-book-reader, .fa-running { 
+        margin-left: 90px;
+    }
 }
