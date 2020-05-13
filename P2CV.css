@@ -1,9 +1,11 @@
+/* Css de la page globale*/
 body
-{   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+{   font-family: 'Crimson Pro', serif, 'Jost', sans-serif;
     font-size: 20px;
     width: 90%;
     display: flex;
 }
+/* Travail sur aside, photo centrée, h2 et icônes loisirs*/
 #photo{
     width:180px;
     height:180px;
@@ -11,18 +13,17 @@ body
     background-color: #ffff;
     border: 4px #BDBDBD solid;
     border-radius: 100px;
-    position:absolute;
     margin-top: 80px;
-    margin-left: 30px;
+    margin-left: 40px;
+    position:absolute;
 }
 aside{
-    width: 20%;
+    width: 40%;
     background-color:#29B6F6;
-    overflow: hidden;
-
 }
-aside h2{
-    margin-top: 350px;
+aside h2 {
+    width: 111%;
+    margin-top: 400px;
     text-align: center;
     background-color: #37474F;
     color: #29B6F6;
@@ -30,94 +31,188 @@ aside h2{
 aside p{
     width: 80%;
     margin-left: 20px;
+    text-align: justify;
 }
 
-.fa-paint-brush, .fa-book-reader, .fa-running { 
-        color:#37474F;
-        font-size:3rem;
-        border:3px #37474F solid;
-        border-radius: 100px;
-        margin-left: 5px;
+.fa-paint-brush, .fa-book-reader { 
+    color:#37474F;
+    font-size:3rem;
+    width: 3.3rem;
+    height: 3.3rem;      
+    border: 3px #37474F solid;
+    border-radius: 100px;
+    margin-left: 3px;
        
 }
-section{
-    width: 80%;
+.fa-running{
+    color:#37474F;
+    font-size: 3.2rem;
+    width: 3.2rem;
+    border: 3px #37474F solid;
+    border-radius: 130px;
+    margin-left: 3px;
 }
-section h2{
-    margin-left: 50px;
-}
-section article{
-   
-}
+/*Mise en page du titre */
 .prenom{
-     color: #29B6F6;
-     margin-right: 10px;
+    color: #29B6F6;
+    margin-right: 10px;
+    font-size: 50px;
 }
-
 header{
-    margin-bottom: 100px;
+   margin-bottom: 100px;
 }
 h1 {
-    display: inline-flex;
-    margin-left: 50px;
-    font-size: 50px;
-  
+   display: inline-flex;
+   font-size: 50px;
+   margin-right: 500px;
+ 
 }
 header h2{
-    font-size: 30px;
+   display: inline-flex;
+   font-size: 30px;
+}
+.souligne {
+   text-decoration: underline #29B6F6;
+   font-size: 30px;
+}
+/* Section principale de la page */
+main{
+   margin-left: 50px;
 }
 .fa-graduation-cap , .fa-briefcase , .fa-pencil-alt {
     margin-right: 20px;
     color:#29B6F6;
     font-size: 2rem;
 }
-
+/* Puce sous forme d'image et recadrage des dates*/
+.puce{
+    width: 6px;
+    height: 6px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    margin-left: -30px;
+}
+strong{ 
+   margin-left: 40px;
+   color: black;
+   font-size:25px;
+   font-weight: bold;
+}
 span{
-	color:black;
+    color:black;
     font-size: 25px;
     font-weight: bold;
 }
-
-table{
-    width: 100%;
-    margin-left: 50px;
-    border-top: 3px #29B6F6 solid;
-    margin-bottom: 100px;
-}
-td{
-    width: 50%;
-    height: 50px;
-}
 li{
+    margin-left: 3px;
     list-style-type: disc;
     font-size: 2rem;
     color: #29B6F6;
 }
+/*Mise en page de la section formations*/
+article{
+    width: 90%;
+    margin-bottom: 50px;
+}
+.Formations{
+    border-top: 3px #29B6F6 solid;
+}
+.Formation1{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.Formation2{
+    display: flex;
+    justify-content: space-between;
+}
+.Formation3{
+    display: flex;
+    justify-content: space-between;
+}
+.Formation2 .nom  {
+    margin-right: 17px;
+}
+.Formation3 .nom{
+    margin-right: 22px;
+}
+/* Mise en page de la section expériences*/
+.Experiences{
+    border-top: 3px #29B6F6 solid;
+}
+.Experience1{
+    display: flex;
+    justify-content:space-between;
+    margin-top: 20px;
+}
+.Experience1 .nom{
+    width:30%;
+}
 
-@media all and (max-width: 1199px)
+.Experience2{
+    display: flex;
+    justify-content: space-between;
+}
+.Experience2 .nom{
+    width:30%;
+}
+
+.Experience3{
+    display: flex;
+    justify-content: space-between;
+}
+.Experience3 .nom{
+    width:30%;
+}
+/* Mise en page des recommandations*/
+.Recommandations{
+    border-top: 3px #29B6F6 solid;
+    display: flex;
+    justify-content: space-between;
+}
+.Reco1{
+    width: 30%;
+}
+/* Site responsive tablettes/smartphones*/
+@media all and (max-width: 1024px)
 {  body{
-        width: 100%;
-        margin-left: 0rem;
-        display: flex;
+    
+        width: auto;
+        min-width: 1000px;
+        margin: 0rem;
+        padding: 0rem;
         flex-direction: column;
     }
     aside{
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    
-}
-    aside h2{
-        margin-top: 0px;
+        top: 100%;
+        display: flex;
+        width:auto;
+        flex-direction: column;
+    }
+    aside p{
+        margin: auto;
+        text-align: justify;
+        align-content: center;
+    }
+    .fa-paint-brush, .fa-book-reader, .fa-running{
+        margin-left: 140px;
     }
     #photo{
         position: relative;
-        margin-bottom: 50px;
+        margin: auto;
+        
+    }
+    aside h2{
+        margin-top: 0px;
+    }
+    .Experience1, .Experience2, .Experience3{
+        width: auto;
+    }
+    .Reco1{
+        width: auto;
     }
     section{
-        width: 70%;
-    }
-    .fa-paint-brush, .fa-book-reader, .fa-running { 
-        margin-left: 90px;
+        display: block;
+        width: auto;
     }
 }
