@@ -175,44 +175,63 @@ article{
 }
 /* Site responsive tablettes/smartphones*/
 @media all and (max-width: 1024px)
-{  body{
+{  
+    html,body{
     
         width: auto;
-        min-width: 1000px;
-        margin: 0rem;
-        padding: 0rem;
         flex-direction: column;
+        margin: 0px ;
     }
-    aside{
-        top: 100%;
-        display: flex;
-        width:auto;
-        flex-direction: column;
-    }
-    aside p{
-        margin: auto;
-        text-align: justify;
-        align-content: center;
-    }
+
     .fa-paint-brush, .fa-book-reader, .fa-running{
-        margin-left: 140px;
+        align-items: center;
     }
     #photo{
         position: relative;
         margin: auto;
         
     }
+    aside{
+        display: block;
+        width: 100%;
+    }
+    aside p{
+        text-align: center;
+        width: 100%;
+    }
     aside h2{
         margin-top: 0px;
     }
-    .Experience1, .Experience2, .Experience3{
-        width: auto;
+    h1{
+        margin: 0;
+        display: contents;
     }
-    .Reco1{
-        width: auto;
+    header{
+        display: flex;
+        flex-direction: column;
     }
     section{
         display: block;
-        width: auto;
+        width: 100%;
     }
+}
+@media all and (max-width:700px)
+{
+    .Formation1, .Formation2, .Formation3{
+        display: block;
+        flex-direction: column;
+    }
+    .Experience1, .Experience2, .Experience3{
+        display: block;
+        flex-direction: column;
+    }
+    .Recommandations{
+        display: block;
+        flex-direction: column;
+    }
+    .Experiences .nom, .Reco1 {
+        width: auto;
+        text-align: justify;
+    }
+  
 }
