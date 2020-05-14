@@ -89,7 +89,7 @@ main{
     width: 6px;
     height: 6px;
     border-radius: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     margin-left: -30px;
 }
 strong{ 
@@ -131,10 +131,10 @@ article{
     justify-content: space-between;
 }
 .Formation2 .nom  {
-    margin-right: 17px;
+    margin-right: 18px;
 }
 .Formation3 .nom{
-    margin-right: 22px;
+    margin-right: 27px;
 }
 /* Mise en page de la section expériences*/
 .Experiences{
@@ -214,9 +214,14 @@ article{
         display: block;
         width: 100%;
     }
+   
 }
+/* Mise en colonne du contenu des articles pour les petits écrans*/
 @media all and (max-width:700px)
-{
+{ 
+    section h2{
+        font-size: 25px;
+    }
     .Formation1, .Formation2, .Formation3{
         display: block;
         flex-direction: column;
